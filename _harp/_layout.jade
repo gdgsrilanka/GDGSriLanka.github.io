@@ -1,0 +1,82 @@
+doctype html(lang='en')
+head
+  meta(charset='utf-8')   
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')    
+  meta(name='description', content='')    
+  meta(name='author', content='') 
+     
+  link(rel='shortcut icon', href='images/favicon.png')
+   
+  title GDG Sri Lanka
+  // Bootstrap core CSS
+  link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
+     
+  link(href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', rel='stylesheet')
+  // Custom styles for this template
+  link(href='css/style.css', rel='stylesheet')
+  // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  //if lt IE 9
+  script(src='bootstrap/js/html5shiv.js')     
+  script(src='bootstrap/js/respond.min.js')
+  body(data-spy='scroll', data-target='#topnav')
+    #topnav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            |                 
+            span.icon-bar
+            |                 
+            span.icon-bar
+          |             
+          a.navbar-brand(href='#') GDG Sri Lanka
+        |         
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='index.html') Home
+            |                 
+            li
+              a(href='Events.html') Events
+            |                 
+            li
+              a(href='Gallery.html') Gallery 
+            |                 
+            li
+              a(href='Team.html') Team
+            |                 
+            li
+              a(href='Contact.html') Contact
+        // /.navbar-collapse
+        
+    != yield
+    
+    footer#footer
+      .container
+        .row
+          .footer-ribbon(style='right: 0')
+            h3.title(style='margin: 0;padding: 5px 10px') Thank 
+              span You
+      .footer-copyright
+        .container
+          .row
+            .col-md-2
+              a.logo(href='index.html')
+                img(src='images/expose-logo.png', alt='Template Eden')          
+            .col-md-5
+              p &copy; Copyright 2013 by Template Eden. All Rights Reserved.         
+            .col-md-5
+              nav#footer-menu
+                ul
+                  li
+                    a(href='#') FAQ&apos;s                           
+                  li
+                    a(href='#') Sitemap                          
+                  li
+                    a(href='#') Contact
+
+    //  Bootstrap core JavaScript
+    //  ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='js/jquery.js')
+    script(src='bootstrap/js/bootstrap.min.js')
