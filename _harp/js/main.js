@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('.stories-slider').slick({
 	dots: true,
   	infinite: true,
-  	speed: 300
+  	speed: 300,
+  	autoplay: true
   });
 });
