@@ -574,5 +574,13 @@ body{
 	#home .media .media-body{
 		text-align: center;
 	}
+	.slick-next{
+		right: 0;
+		display: none;
+	}
+	.slick-prev {
+		left: 0;
+		display: none;
+	}
 }
 
