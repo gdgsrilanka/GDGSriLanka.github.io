@@ -209,11 +209,11 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .jumbotron{
-  background: url("../images/GDG Site back.jpg");
-  color: #ffffff;
-  background-attachment: fixed;
-  padding-top: 0;
-  background-size: cover;
+    background: url(../images/gdg_cover.jpg);
+    color: #ffffff;
+    background-attachment: fixed;
+    padding-top: 0;
+    background-size: cover;
 }
 
 .jumbotron p{
@@ -574,6 +574,14 @@ body{
 	}
 	#home .media .media-body{
 		text-align: center;
+	}
+	.slick-next{
+		right: 0;
+		display: none;
+	}
+	.slick-prev {
+		left: 0;
+		display: none;
 	}
 }
 

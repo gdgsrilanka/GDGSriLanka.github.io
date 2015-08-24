@@ -209,10 +209,11 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .jumbotron{
-    background: url(../images/intro-bg.jpg);
+    background: url(../images/gdg_cover.jpg);
     color: #ffffff;
     background-attachment: fixed;
     padding-top: 0;
+    background-size: cover;
 }
 
 .jumbotron p{
