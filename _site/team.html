@@ -18,6 +18,16 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries--><!--if lt IE 9-->
     <script src="bootstrap/js/html5shiv.js"></script>
     <script src="bootstrap/js/respond.min.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+
+
 </head>
 
 <body data-spy="scroll" data-target="#topnav">
@@ -57,93 +67,44 @@
         </div>
     </div>
 
-    <div class="container" id="services">
-        <!-- Example row of columns-->
-
-        <div class="row features">
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-ok icon-light"></i></span>
-                    </div>
-
-                    <h2>With Bootstrap <span class=
-                    "label label-warning">3.0</span></h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
+    <div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
                 </div>
-            </div>
-
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-laptop icon-light"></i></span>
-                    </div>
-
-                    <h2>Fully Responsive</h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-download-alt icon-light"></i></span>
-                    </div>
-
-                    <h2>And Totally <span style=
-                    "color:#248822">Free</span></h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</br>
+</br>
+</br>
 
-    <section class="slider" id="features">
-        <div class="container">
-            <div class="inner-page">
-                <h2 class="page-headline large text-center">Tell your projects
-                awesome story.</h2>
 
-                <p class="text-center">Tell your projects awesome story. Tell
-                your projects awesome story. Tell your projects awesome story.
-                Tell your projects awesome story.</p>
-            </div>
-
-            <div class="row inner-page">
-                <div class="stories-slider">
-                    <div><img src="images/google-io-stage.jpg"></div>
-
-                    <div><img src="http://placehold.it/735x345"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing" id="pricing">
-    	<div class="row">
-    		<h3 class="text-center" >Event Calander </h3>
-       <div class="col-md-3 col-md-offset-3">
-       	<iframe src="https://www.google.com/calendar/embed?src=gdgsrilanka%40gmail.com&ctz=Asia/Colombo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-       </div>
-   </div>
-    </section>
-
-   
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -159,11 +120,11 @@
                 <div class="row">
                     <div class="col-md-2">
                         <a class="logo" href="index.html"><img alt=
-                        "Template Eden" src="images/"></a>
+                        "Template Eden" src="images/expose-logo.png"></a>
                     </div>
 
                     <div class="col-md-5">
-                        <p>&copy; Copyright 2015 | GDG SRI LANKA. All Rights
+                        <p>&copy; Copyright 2013 by Template Eden. All Rights
                         Reserved.</p>
                     </div>
 
@@ -190,5 +151,22 @@
     </footer><!--  Bootstrap core JavaScript-->
     <!--  ==================================================-->
     <!-- Placed at the end of the document so the pages load faster--><script src="js/jquery.js"></script><script src="bootstrap/js/bootstrap.min.js"></script><script src="js/slick/slick.min.js"></script><script src="js/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
