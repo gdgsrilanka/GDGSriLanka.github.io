@@ -214,6 +214,7 @@ fieldset[disabled] .btn-primary.active {
     background-attachment: fixed;
     padding-top: 0;
     background-size: cover;
+    margin:0;
 }
 
 .jumbotron p{
@@ -227,12 +228,25 @@ fieldset[disabled] .btn-primary.active {
     margin-top: 100px;
 }
 
-section.slider{
-    color: #ffffff;
-    background: #52AD81;
-    margin: 40px 0;
+section.gdg{
+    color: #fff;
+    background:#06A2DE;
     padding: 40px 0;
 }
+
+section.vision{
+    color: #242424;
+    /*background:#06A2DE;*/
+    padding: 40px 0;
+}
+
+
+section.slider{
+     color: #ffffff;
+     background: #52AD81;
+     margin: 40px 0;
+     padding: 40px 0;
+ }
 
 section.slider h2{
     margin-bottom: 20px;
