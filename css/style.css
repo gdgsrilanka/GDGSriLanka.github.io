@@ -244,7 +244,7 @@ section.vision{
 section.slider{
      color: #ffffff;
      background: #52AD81;
-     margin: 40px 0;
+     /*margin: 40px 0;*/
      padding: 40px 0;
  }
 
@@ -432,7 +432,6 @@ a.list-group-item .list-group-item-heading{
 }
 
 
-
 .features {
     padding-top: 30px;
 }
@@ -599,3 +598,26 @@ body{
 	}
 }
 
+/*Event Page*/
+.event-jumbotron{
+    background: url(../images/event_cover.jpg);
+    color: #ffffff;
+    background-attachment: fixed;
+    padding-top: 0;
+    background-size: cover;
+    margin:0;
+    height: 500px;
+}
+
+section.io2015{
+    color: #fff;
+    background:#06A2DE;
+    padding: 40px 0;
+}
+
+section.AndroidJam{
+    color: #242424;
+    background:#fff;
+    padding: 40px 0;
+}
+/*End Event Page*/
