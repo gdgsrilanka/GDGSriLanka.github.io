@@ -3,23 +3,35 @@ layout: default
 ---
 <body data-spy="scroll" data-target="#topnav">
 
-    <section class="slider" id="features">
-        <div class="container">
-            <div class="inner-page">
-                <h2 class="page-headline large text-center">GDG Meetups</h2>
-
-                <p class="text-center">Meetups</p>
-            </div>
-
-            <div class="row inner-page">
-                <div class="stories-slider">
-                    <div><img src="images/google-io-stage.jpg"></div>
-
-                    <div><img src="http://placehold.it/735x345"></div>
-                </div>
+{% for post in site.posts %}
+{% if post.categories contains 'meetup01' %}
+<section id="AndroidJam" class="AndroidJam">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p><h2><b>{{post.title}}</b></h2>
+                {{post.content}}
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+{% elsif post.categories contains 'meetup' %}
+
+<section id="io2015" class="io2015">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p><h2><b>{{post.title}}</b></h2>
+                {{post.content}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endfor %}
 
 
     <!--  Bootstrap core JavaScript-->

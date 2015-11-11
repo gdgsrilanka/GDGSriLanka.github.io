@@ -117,17 +117,41 @@ layout: default
     </div>
 </section>
 
-<section href="AndroidJam" id="AndroidJam" class="AndroidJam">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p><h2><b>Android Jam Workshops</b></h2>
-                Done with the help of Google Student Ambassadors and WSO2 Inc., the Android Jam was a series of tutorial session which
-                aided students of several universities to develop an android application hands-on.</p>
+{% for post in site.posts %}
+    {% if post.categories contains 'one' %}
+        <section id="AndroidJam" class="AndroidJam">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p><h2><b>{{post.title}}</b></h2>
+                            {{post.content}}
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+    {% elsif post.categories contains 'two' %}
+
+        <section id="io2015" class="io2015">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p><h2><b>{{post.title}}</b></h2>
+                        {{post.content}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+{% endfor %}
+
+
+
+
+
+
 
     <section class="pricing" id="pricing">
         <div class="container">
