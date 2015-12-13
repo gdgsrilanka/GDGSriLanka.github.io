@@ -2,6 +2,52 @@
 layout: default
 ---
 <!-- core CSS -->
+<style type="text/css">
+    
+team-member {
+  padding: 13px;
+  background: #eeeeee;
+  border: 2px solid #eeeeee;
+  transition: border-color 400ms;
+  -webkit-transition: border-color 400ms;
+}
+team-member .team-img {
+  margin: -15px -15px 0 -15px;
+}
+team-member .team-info {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+team-member:hover {
+  border-color: #45aed6;
+}
+team-member:hover .social-icons > li > a {
+  background: #45aed6;
+}
+social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+social-icons > li {
+  display: inline-block;
+}
+social-icons > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background: #222534;
+  border-radius: 3px;
+}
+
+</style>
+
+
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
