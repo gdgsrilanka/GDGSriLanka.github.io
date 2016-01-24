@@ -15,6 +15,7 @@
     <link href="../css/slick/slick.css" rel="stylesheet"/>
     <link href="../css/slick/slick-theme.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
+    <link href="../css/main.css" rel="stylesheet"/>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries--><!--if lt IE 9-->
     <script src="../bootstrap/js/html5shiv.js">
 </script><script src="../bootstrap/js/respond.min.js"></script>
@@ -43,98 +44,62 @@
 </body>
 </html>
 
+<!-- core CSS -->
+<style type="text/css">
+    
+team-member {
+  padding: 13px;
+  background: #eeeeee;
+  border: 2px solid #eeeeee;
+  transition: border-color 400ms;
+  -webkit-transition: border-color 400ms;
+}
+team-member .team-img {
+  margin: -15px -15px 0 -15px;
+}
+team-member .team-info {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+team-member:hover {
+  border-color: #45aed6;
+}
+team-member:hover .social-icons > li > a {
+  background: #45aed6;
+}
+social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+social-icons > li {
+  display: inline-block;
+}
+social-icons > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background: #222534;
+  border-radius: 3px;
+}
+
+</style>
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 <body data-spy="scroll" data-target="#topnav">
-<!--    <div class="navbar navbar-inverse navbar-fixed-top" id="topnav">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-collapse"
-                data-toggle="collapse" type="button"><span class=
-                "icon-bar"></span> <span class="icon-bar"></span> <span class=
-                "icon-bar"></span></button> <a class="navbar-brand" href=
-                "#">GDG Sri Lanka</a>
-            </div>
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="Events.html">Events</a>
-                    </li>
-
-                    <li>
-                        <a href="Gallery.html">Gallery</a>
-                    </li>
-
-                    <li>
-                        <a href="Team.html">Team</a>
-                    </li>
-
-                    <li>
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>&lt;!&ndash; /.navbar-collapse&ndash;&gt;
-        </div>
-    </div>-->
-
-<!--    <div class="container" id="services">
-        &lt;!&ndash; Example row of columns&ndash;&gt;
-
-        <div class="row features">
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-ok icon-light"></i></span>
-                    </div>
-
-                    <h2>With Bootstrap <span class=
-                    "label label-warning">3.0</span></h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-laptop icon-light"></i></span>
-                    </div>
-
-                    <h2>Fully Responsive</h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4 text-center">
-                <div class="single-fet">
-                    <div>
-                        <span class="icon-stack icon-4x"><i class=
-                        "icon-circle icon-stack-base"></i> <i class=
-                        "icon-download-alt icon-light"></i></span>
-                    </div>
-
-                    <h2>And Totally <span style=
-                    "color:#248822">Free</span></h2>
-
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                    dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet.</p>
-                </div>
-            </div>
-        </div>
-    </div>-->
 
 <div id="home" class="event-jumbotron">
     <div class="container">
@@ -146,9 +111,184 @@
 <section href="io2015" id="io2015" class="io2015">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <p><h2><b>Meet Our GDG Team</b></h2> <h5><b>Something you should not miss out!</b></h5></p>
+            <div class="col-lg-12 text-center"><div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Meet The Team</h2>
+                           </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Milindu.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Milidu Sanoj</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba b ab aba ba ab</p>
+                         <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Pamu.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Pamuditha Imalka</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba b ab ab ab ab aba ba aba ba ab</p>
+                          <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Tharu.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Tharaka Devinda</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba ba ba ba ba ba ba ba ba  </p>
+                          <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                      
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Udaya.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Udaya Gunathilaka </h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba ba ba ba ba ba ba ba</p>
+                         <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Saff.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Shafraz Rahim</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba b ab aba ba ab</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Charith.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Charith Madushanka</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba b ab ab ab ab aba ba aba ba ab</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Sandun.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Sandun Nilanka</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba ba ba ba ba ba ba ba ba  </p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/Dushanth.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dushantha Ranwala</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba ba ba ba ba ba ba ba</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/raveenp.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Raveen Harith</h3>
+                            <span>Organizer</span>
+                        </div>
+                        <p>ba ba ba ba ba ba ba ba ba ba ba ba ba</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

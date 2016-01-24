@@ -1,5 +1,11 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,700,900,300");
 
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+
 *, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Open Sans',serif;
     font-weight: 300;
@@ -621,3 +627,22 @@ section.AndroidJam{
     padding: 40px 0;
 }
 /*End Event Page*/
+
+.social-icons li{
+    float: left;
+    padding: 10px;
+}
+
+.social-icons li i{
+    color: #fff;
+}
+
+
+
+.social-icons li i:hover{
+    color:  #333333;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
